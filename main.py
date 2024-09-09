@@ -33,7 +33,7 @@ circleWaterRadius = 15
 rectWater = pygame.Rect(35,5,100,30 )
 
 try:
-    iconWater = pygame.image.load('C:/Arnav/MBM Hackathon/water.png')
+    iconWater = pygame.image.load('water.png')
 except pygame.error as e:
     print(f"Failed to load image: {e}")
     pygame.quit()
