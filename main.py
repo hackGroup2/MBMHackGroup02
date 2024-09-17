@@ -1,3 +1,34 @@
+import pygame
+from os import getcwd
+pygame.init()
+
+gameFont = pygame.font.Font(None, 25)
+SCREEN_WIDTH,SCREEN_HEIGHT = 1000,700
+pygame.display.set_caption("MBM Hackathon Group 2 project")
+screen = pygame.display.set_mode((SCREEN_WIDTH,SCREEN_HEIGHT))
+clock = pygame.time.Clock()
+
+interval = 3000
+previousTime = pygame.time.get_ticks()
+#Starting Resources
+energyCount = 15
+waterCount = 15
+foodCount = 15
+money = 500
+population = 10
+pollution = 3
+
+#Starting Buildings
+numFarms = 0
+numWindmills = 0
+numCoalplants = 0
+numStores = 0
+numParks = 0
+numFactories = 0
+numLakes = 0
+numHousing = 0
+
+
 class Button:
     def __init__(self,xPos:int,yPos:int,text:str,textColor,buttonColor,colorOnClick,borderColor,width:int,height:int):
         self.xPos = xPos
